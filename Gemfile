@@ -29,12 +29,13 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'pronto', '~> 0.6'
-gem 'pronto-rubocop', require: false
-gem 'pronto-flay', require: false
+gem 'pronto-rubocop'
+gem 'pronto-flay'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'pry-rails'
 end
 
 group :development do
