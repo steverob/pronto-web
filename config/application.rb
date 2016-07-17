@@ -9,5 +9,11 @@ Bundler.require(*Rails.groups)
 module ProntoWeb
   class Application < Rails::Application
     config.autoload_paths << Rails.root.join('lib')
+    config.generators do |g|
+      g.test_framework  false
+      g.stylesheets     false
+      g.javascripts     false
+      g.helpers         false
+    end
   end
 end
