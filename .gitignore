@@ -20,6 +20,7 @@
 # Ignore Byebug command history file.
 .byebug_history
 
+config/database.yml
 .pronto.yml
 /test_codebase
 .ssh
