@@ -15,7 +15,7 @@ module ProntoWeb
       private
 
       def perform_review runnable
-        ProntoWeb::Runner.new(@project, runnable).run
+        ProntoWeb::Runner.new(runnable).run
       end
 
       def build_runnable

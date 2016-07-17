@@ -1,7 +1,6 @@
 module ProntoWeb
   class Runner
-    def initialize project, runnable
-      @project  = project
+    def initialize runnable
       @runnable = runnable
     end
 
@@ -17,7 +16,6 @@ module ProntoWeb
 
     private
 
-    attr_reader :runnable, :project
-
+    attr_reader :runnable
   end
 end
