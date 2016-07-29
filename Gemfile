@@ -34,6 +34,7 @@ gem 'pronto-flay'
 gem 'rugged'
 
 gem 'sidekiq'
+gem 'sinatra', github: 'sinatra/sinatra'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
