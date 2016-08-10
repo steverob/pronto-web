@@ -6,7 +6,8 @@ class Project < ApplicationRecord
     user.access_token_for scm_service: self.scm_service
   end
 
-  def create_pull_request_review payload
-    pull_request_reviews.create payload: payload
+  def create_pr_review payload
+    pr = pull_request_reviews.create payload: payload.to_h
+    ReviewJob.perform_later pr.id
   end
 end
